@@ -487,18 +487,18 @@ const rl = readline.createInterface({
 async function sendEmail() {
   
   let transporter = nodemailer.createTransport({
-    host: 'smtp.rambler.ru',
-    port: 465,
+    host: 'host',
+    port: port,
     auth: {
-      user: 'nkpiyhxv@rambler.ru',
-      pass: 'hsdfgGSDE7219'
+      user: 'user',
+      pass: 'pass'
     }
   });
 
   
   let mailOptions = {
-    from: 'nkpiyhxv@rambler.ru',
-    to: 'nikitashandro@gmail.com',
+    from: 'from',
+    to: 'to',
     subject: 'Тема вашего письма',
     text: 'Текст вашего письма',
   };
